@@ -20,11 +20,13 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import coil.compose.AsyncImage
+import ru.spektrit.pdfcompose.R
 
 
 @Composable
@@ -126,7 +128,7 @@ fun ImageDialog(
                .align(Alignment.BottomCenter),
             onClick = { onDismissRequest() }
          ) {
-            Text("Назад")
+            Text(stringResource(id = R.string.button_back))
          }
       }
    }
